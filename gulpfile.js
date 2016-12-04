@@ -88,7 +88,7 @@ gulp.task('serve', function () {
     gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('fdev', ['build', 'serve']);
+gulp.task('fdev', ['less', 'build', 'serve']);
 
 
 

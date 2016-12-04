@@ -66,6 +66,9 @@ p {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  .navbar-collapse {
+    margin: 2px;
+  }
   .navbar-header {
     .navbar-brand {
       font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
@@ -73,7 +76,7 @@ p {
       letter-spacing: 1px;
       color: $theme-primary;
       &:hover, &:focus {
-        color: #fcbd20;
+        color: $head-secondary;
       }
     }
     .navbar-toggle {
@@ -97,10 +100,10 @@ p {
       }
     }
     &.active > a {
-      color: $theme-primary !important;
+      color: white !important;
       background-color: transparent;
       &:focus {
-        color: $theme-primary !important;
+        color: white !important;
         background-color: transparent;
       }
       &:hover, &:focus:hover {
@@ -115,9 +118,17 @@ p {
     background-color: transparent;
     border-color: transparent;
     .navbar-header .navbar-brand {
-      color: rgba(255, 255, 255, 0.7);
+      color: $transparent-font;
+      background-image: url("../img/Activus_WHITE_Mascot_Only.png");
+      position: absolute;
+      left: 50%;
+      width: 50px;
+      display: block;
+      margin: 2px;
+      margin-left: -25px !important;
+      text-align: center;
       &:hover, &:focus {
-        color: white;
+        color: $transparent-font;
       }
     }
     .nav > li > a {
@@ -130,21 +141,21 @@ p {
       }
     }
     &.affix {
-      background-color: white;
+      background-color: $theme-primary;
       border-color: rgba(34, 34, 34, 0.1);
       .navbar-header .navbar-brand {
-        color: #222222;
+        color: $transparent-font;
         &:hover, &:focus {
-          color: $theme-primary;
+          color: $transparent-font;
         }
       }
       .nav > li > a {
-        color: #222222;
+        color: rgba(255, 255, 255, 0.7);
         &:focus {
-          color: #222222;
+          color: rgba(255, 255, 255, 0.7);
         }
         &:hover, &:focus:hover {
-          color: $theme-primary;
+          color: white;
         }
       }
     }
@@ -156,11 +167,7 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), $head-primary;
-  /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, $head-primary, $head-secondary);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, $head-primary, $head-secondary);
+  background-color: #be1e2d;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   .header-content {

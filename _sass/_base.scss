@@ -190,6 +190,19 @@ header {
           margin-bottom: 25px;
         }
       }
+      .badges {
+        text-align: center;
+      }
+      .badges .badge-link {
+        display: inline-block;
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        img {
+          height: 60px;
+        }
+      }
     }
   }
   .device-container {
@@ -198,6 +211,15 @@ header {
     .screen img {
       border-radius: 3px;
     }
+  }
+  .brand-tagline {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-style: italic;
+    font-stretch: condensed;
+    font-weight: 400;
+    margin-bottom: 2em;
   }
 }
 

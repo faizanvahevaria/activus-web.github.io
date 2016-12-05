@@ -17,6 +17,7 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: rgba(190,30,45,1);
 }
 
 body {
@@ -35,11 +36,12 @@ a {
   }
 }
 
+
 hr {
   max-width: 100px;
   margin: 25px auto 0;
   border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
   &.light {
     border-color: white;
   }
@@ -59,7 +61,7 @@ p {
 
 .navbar-default {
   background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -142,7 +144,7 @@ p {
     }
     &.affix {
       background-color: $theme-primary;
-      border-color: rgba(34, 34, 34, 0.1);
+      border-color: rgba(255, 255, 255, 0.1);
       .navbar-header .navbar-brand {
         color: $transparent-font;
         &:hover, &:focus {
@@ -261,11 +263,11 @@ section {
     font-size: 50px;
   }
   &.download {
-    padding: 150px 0;
+    padding: 20px 0 20px;
     position: relative;
     h2 {
       margin-top: 0;
-      font-size: 50px;
+      font-size: 40px;
     }
     .badges .badge-link {
       display: block;
@@ -279,6 +281,7 @@ section {
     }
   }
   &.features {
+    background-color: white;
     .section-heading {
       margin-bottom: 100px;
       h2 {
@@ -337,7 +340,7 @@ section {
         margin-bottom: 25px;
         color: white;
         max-width: 450px;
-        font-size: 50px;
+        font-size: 40px;
       }
     }
     .overlay {
@@ -431,7 +434,7 @@ section {
 
 @media (min-width: 768px) {
   section.download h2 {
-    font-size: 70px;
+    font-size: 40px;
   }
 }
 
@@ -477,9 +480,7 @@ footer {
 }
 
 .bg-primary {
-  background: $theme-primary;
-  background: -webkit-linear-gradient($theme-primary, $theme-secondary);
-  background: linear-gradient($theme-primary, $theme-secondary);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .text-primary {

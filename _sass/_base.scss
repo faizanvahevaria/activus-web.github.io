@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  height: 100%;
   width: 100%;
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
@@ -30,9 +29,9 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: $theme-primary;
+  color: white;
   &:hover, &:focus {
-    color: #fcbd20;
+    color: white;
   }
 }
 
@@ -225,7 +224,21 @@ header {
   }
 }
 
-
+@media (min-height: 800px) {
+  .header-content-inner {
+    top: 40%;
+  }
+}
+@media (min-height: 1400px) {
+  .header-content-inner {
+    top: 30%;
+  }
+}
+@media (max-height: 800px ) {
+  .header-content-inner {
+    top: 50%;
+  }
+}
 @media (min-width: 768px) {
   header {
     max-height: 800px;
@@ -237,7 +250,6 @@ header {
         max-width: none;
         margin: 0;
         position: absolute;
-        bottom: 50%;
         transform: translateY(-50%);
         h1 {
           font-size: 35px;
@@ -622,7 +634,7 @@ body {
 
 .intro-header {
   background: no-repeat center center;
-  background-color: #808080;
+  background-color: $theme-primary;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;

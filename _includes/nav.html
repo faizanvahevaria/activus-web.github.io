@@ -5,22 +5,22 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top" >Activus</a>
+            <a class="navbar-brand page-scroll" href="/" >Activus</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#download">About</a>
+                <li {% if page.url == "/about/" %}class="active"{% endif %}>
+                    <a href="/about/" >About</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#features">Support</a>
+                <li {% if page.url == "/support/" %}class="active"{% endif %}>
+                    <a href="/support/">Support</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Press</a>
+                <li {% if page.url == "/press/" %}class="active"{% endif %}>
+                    <a href="/press/">Press</a>
                 </li>
-                <li>
+                <li {% if page.url == "/blog/" %}class="active"{% endif %}>
                     <a href="/blog/">Blog</a>
                 </li>
             </ul>

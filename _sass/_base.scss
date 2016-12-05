@@ -343,6 +343,26 @@ section {
         font-size: 40px;
       }
     }
+    .list-badges {
+      margin-bottom: 25px;
+      img {
+        height: 50px;
+        margin-bottom: 25px;
+      }
+    }
+    .badges {
+      text-align: left;
+    }
+    .badges .badge-link {
+      display: inline-block;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        height: 60px;
+      }
+    }
     .overlay {
       height: 100%;
       width: 100%;
@@ -402,6 +422,7 @@ section {
           border-radius: 100%;
           color: white;
         }
+        /*
         &.social-twitter a {
           background-color: #1da1f2;
           &:hover {
@@ -420,6 +441,7 @@ section {
             background-color: #d73925;
           }
         }
+        */
       }
     }
   }

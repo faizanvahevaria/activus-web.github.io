@@ -659,6 +659,70 @@
 }
 
 
+/* Nexus 6 */
+
+.device-mockup.nexus6,
+.device-mockup.nexus6.portrait {
+	padding-bottom: 201.76%;
+}
+
+.device-mockup.nexus6.landscape {
+	padding-bottom: 49.56%;
+}
+
+.device-mockup.nexus6 > .device,
+.device-mockup.nexus6.black > .device,
+.device-mockup.nexus6.portrait.black > .device {
+	background-image: url("nexus_6/nexus_6_port.png");
+}
+
+.device-mockup.nexus6.landscape > .device,
+.device-mockup.nexus6.landscape.black > .device {
+	background-image: url("nexus_6/nexus_6_land.png");
+}
+
+.device-mockup.nexus6.white > .device,
+.device-mockup.nexus6.portrait.white > .device {
+	background-image: url("nexus_6/nexus_6_port.png");
+}
+
+.device-mockup.nexus6.landscape.white > .device {
+	background-image: url("nexus_6/nexus_6_land.png");
+}
+
+.device-mockup.nexus6.gold > .device,
+.device-mockup.nexus6.portrait.gold > .device {
+  background-image: url("nexus_6/nexus_6_port.png");
+}
+
+.device-mockup.nexus6.landscape.gold > .device {
+  background-image: url("nexus_6/nexus_6_land.png");
+}
+
+.device-mockup.nexus6 > .device > .screen,
+.device-mockup.nexus6.portrait > .device > .screen {
+  top: 11.58%; bottom: 11.58%; left: 5.97%; right: 5.97%;
+}
+
+.device-mockup.nexus6.landscape > .device > .screen {
+  top: 5.97%; bottom: 5.97%; left: 11.38%; right: 11.58%;
+}
+
+.device-mockup.nexus6 > .device > .button,
+.device-mockup.nexus6.portrait > .device > .button {
+  display: block;
+    top: 89.9%; bottom: 3.2%; left: 43%; right: 43%;
+}
+
+.device-mockup.nexus6.landscape > .device > .button {
+	display: block;
+	top: 43%; bottom: 43%; left: 89.9%; right: 3.2%;
+}
+
+
+
+
+
 /* Galaxy Tab4 */
 .device-mockup.galaxy_tab4,
 .device-mockup.galaxy_tab4.landscape {

@@ -78,7 +78,6 @@ ul {
   font-weight: 200;
   letter-spacing: 1px;
   .navbar-collapse {
-    margin: 2px;
   }
   .navbar-header {
     .navbar-brand {
@@ -133,8 +132,8 @@ ul {
       background-image: url("../img/White Logo.png");
       position: absolute;
       left: 50%;
-      width: 65px;
-      height: 52px;
+      width: 55px;
+      height: 42px;
       display: block;
       margin: 2px;
       margin-left: -25px !important;
@@ -226,6 +225,9 @@ header {
           width: 150px;
         }
       }
+      .text-logo {
+        width: 85%;
+      }
     }
   }
   .device-container {
@@ -236,7 +238,7 @@ header {
     }
   }
   .brand-tagline {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-size: 2em;
     font-style: italic;

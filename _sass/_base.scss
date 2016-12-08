@@ -57,6 +57,16 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+ol {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+ul {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 
 .navbar-default {
   background-color: white;
@@ -700,8 +710,22 @@ body {
 
 @media only screen and (min-width: 768px) {
   .intro-header {
-    .site-heading, .post-heading, .page-heading {
+    .site-heading, .post-heading {
       padding: 150px 0;
+    }
+    .page-heading {
+      padding: 90px 0 20px;
+
+      .meta {
+        font-family: 'Lora', 'Times New Roman', serif;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px;
+        a {
+          color: white;
+        }
+      }
+
     }
   }
 }

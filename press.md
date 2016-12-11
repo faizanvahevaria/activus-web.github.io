@@ -1,5 +1,7 @@
 ---
 layout:     page
 title:      "Activus in Press"
-date:       2016-06-10 12:00:00
 ---
+
+
+Want to get the DL on Bumble? We'd love to hear from you! Any press-related inquires please send to press@activus.io

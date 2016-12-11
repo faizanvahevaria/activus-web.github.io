@@ -202,7 +202,6 @@ header {
         }
       }
       .badges {
-        text-align: center;
       }
       .badges .badge-link {
         display: inline-block;
@@ -451,10 +450,10 @@ section {
       li {
         a {
           display: block;
-          height: 80px;
-          width: 80px;
-          line-height: 80px;
-          font-size: 40px;
+          height: 50px;
+          width: 50px;
+          line-height: 50px;
+          font-size: 25px;
           border-radius: 100%;
           color: white;
         }
@@ -711,8 +710,32 @@ body {
 
 .articles {
   a {
-    color: $theme-primary;
-    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  }
+  small {
+    margin: 0;
+    padding: 2px;
+    background-color: rgba(0,0,0,0.35);
+  }
+  h3 {
+    padding: 5px;
+    background-color: rgba(0,0,0,0.35);
+    margin: 10px 0 0 0;
+    width: auto;
+    font-size: 1.8em;
+    font-weight: 600;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+  .blog-head {
+    height: 250px;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 20px 0;
   }
 }
 
@@ -740,8 +763,12 @@ body {
 
 @media only screen and (min-width: 768px) {
   .intro-header {
-    .site-heading h1, .page-heading h1 {
+    .site-heading h1 {
       font-size: 80px;
+    }
+
+    .page-heading h1 {
+      font-size: 50px;
     }
   }
 }

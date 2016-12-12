@@ -710,20 +710,17 @@ body {
 
 .articles {
   a {
-    color: white;
+    color: $theme-primary;
     text-decoration: none;
   }
   small {
     margin: 0;
-    padding: 2px;
-    background-color: rgba(0,0,0,0.35);
+    margin-bottom: 10px;
   }
   h3 {
-    padding: 5px;
-    background-color: rgba(0,0,0,0.35);
-    margin: 10px 0 0 0;
     width: auto;
-    font-size: 1.8em;
+    margin-bottom: 0;
+    font-size: 1.5em;
     font-weight: 600;
     &:hover, &:focus {
       text-decoration: underline;
@@ -735,7 +732,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
-    margin: 20px 0;
+    margin-bottom: 50px;
   }
 }
 
